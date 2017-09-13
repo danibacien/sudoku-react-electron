@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  margin: auto;
+  text-align: center;
+  width: 600px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  color: white;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.selector {
+  background-color: green;
+  border: 1px solid black;
+  clear: both;
+  color: white;
+  float: left;
+  font-weight: bolder;
+  height: 50px;
+  margin-top: 10px;
+  width: 450px;
+}
+
+.sudoku {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  margin: auto;
+  max-height: 460px;
+  max-width: 460px;
+}
+
+.menu {
+  float: right;
+}
+
+.menu input {
+  display: block;
+}
+
+.square {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 149px;
+  margin: 1px;
+  width: 149px;
+}
+
+.square:nth-of-type(even) {
+  background-color: green;
+  color: white;
+}
+
+.square div {
+  border: 1px solid black;
+  height: 49px;
+  padding: 17px;
+  width: 49px;
+}
+
+.selected {
+  background-color: blue;
+  color: white;
+}
+
+.entry {
+  color: darkblue;
+}
+
+.selectionable {
+  cursor: pointer;
+}
+
+.selectionable:hover {
+  background-color: rgba(20, 20, 20, 0.2);
+  color: white;
+}
+
+.menu select {
+  margin: 130px 5px 5px;
+  width: 130px;
+}
+
+.menu hr {
+  margin: 10px 0;
+}
+
+.menu input[type="button"] {
+  background-color: green;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  margin: 5px;
+  width: 130px;
+}
+
+.menu input[type="button"]:hover {
+  background-color: darkgreen;
+}
+
+.menu input[type="button"]:disabled,
+.menu input[type="button"]:disabled:hover {
+  background-color: lightgray;
+  border: 1px solid gray;
+  cursor: not-allowed;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
