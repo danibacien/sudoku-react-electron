@@ -3,6 +3,6 @@ Sudoku with React & Electron
 Requirements:
 - NPM installed.
 
-Para iniciar:
+To start:
 - npm start
 - npm run electron
