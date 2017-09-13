@@ -46,7 +46,7 @@ class Sudoku extends Component {
         break;
       }
     }
-    alert(check === true? "Enhorabuena!. Completaste el tablero correctamente." : "Oooh. Hay errores");
+    alert(check === true? "Congratulations!. Sudoku completed." : "Oooh. There are mistakes.");
   }
 
   handleCleanBoard() {
@@ -160,11 +160,11 @@ class Menu extends Component {
           <option value="M">MEDIO</option>
           <option value="D">DIFÍCIL</option>
         </select>
-        <input type="button" value="Nuevo" onClick={this.props.newBoard}/>
+        <input type="button" value="New Game" onClick={this.props.newBoard}/>
         <hr/>
-        <input type="button" value={"Pistas restantes: " + this.props.hintsLeft} disabled={this.props.hintsLeft === 0} onClick={this.props.hint}/>
-        <input type="button" value="Comprobar" disabled={!this.props.checkEnabled} onClick={this.props.check}/>
-        <input type="button" value="Limpiar" onClick={this.props.clean}/>
+        <input type="button" value={"Hints Left: " + this.props.hintsLeft} disabled={this.props.hintsLeft === 0} onClick={this.props.hint}/>
+        <input type="button" value="Check Board" disabled={!this.props.checkEnabled} onClick={this.props.check}/>
+        <input type="button" value="Clean Board" onClick={this.props.clean}/>
       </div>
     );
   }
